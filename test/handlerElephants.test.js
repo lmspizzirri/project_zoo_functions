@@ -6,5 +6,8 @@ describe('Testes da função HandlerElephants', () => {
         expect(handlerElephants(5)).toBe('Parâmetro inválido, é necessário uma string');
         expect(handlerElephants('popularity')).toEqual(5);
         expect(handlerElephants('count')).toBe(4);
+        expect(handlerElephants('averageAge')).toBeCloseTo(10.5);
+        expect(handlerElephants('location')).toBe('NW');
+        expect(handlerElephants('names')).toContain("Jefferson");
     });
 });    
