@@ -53,5 +53,5 @@ function getEmployeesCoverage(object) {
     return infoById(object);
   }
 }
-getEmployeesCoverage({ id: '4b40a139-d4dc-4f09-822d-ec25e819a5ad' });
+
 module.exports = getEmployeesCoverage;
