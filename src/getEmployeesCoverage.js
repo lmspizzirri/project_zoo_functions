@@ -46,10 +46,10 @@ function getEmployeesCoverage(object) {
   if (!object) {
     return noInfo();
   }
-  if (Object.hasOwn(object, 'name')) {
+  if ('name' in object) {
     return infoByName(object);
   }
-  if (Object.hasOwn(object, 'id')) {
+  if ('id' in object) {
     return infoById(object);
   }
 }
